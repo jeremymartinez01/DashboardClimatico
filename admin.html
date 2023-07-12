@@ -21,16 +21,17 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!-- Sidebar -->
+    <!-- Sidebar-->
  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+          <a href="#temp" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Temperatura</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
-            <i class="fas fa-chart-area fa-fw me-3"></i><span>Current Weather </span>
+          <a href="#waves" class="list-group-item list-group-item-action py-2 ripple active">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span>Mareas </span>
           </a>
+          <!-- 
           <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
               class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
           <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -50,6 +51,7 @@
               class="fas fa-users fa-fw me-3"></i><span>Users</span></a>
           <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
               class="fas fa-money-bill fa-fw me-3"></i><span>Sales</span></a>
+          -->
         </div>
       </div>
     </nav>
@@ -173,21 +175,23 @@
     <div class="container pt-4">
       <section>
         <div class="row">
-          <div class="col-xl-3 col-sm-6 col-12 mb-4">
+          <div class="col-xl-12 col-sm-8 col-18 mb-4">
             <div class="card">
               <div class="card-body">
-                <div class="d-flex justify-content-between px-md-1">
+                <div class="d-flex justify-content-around px-md-1">
                   <div class="align-self-center">
-                    <i class="fas fa-pencil-alt text-info fa-3x"></i>
+                  <!--  <i class="fas fa-pencil-alt text-info fa-3x"></i> -->
+                    <img src="https://pbs.twimg.com/media/EMZurFNW4AAcrUo.jpg" height="200" width="250">
                   </div>
-                  <div class="text-end">
-                    <h3>Humidity</h3>
+                  <div class="text-end align-self-center">
+                    <h3>Temperatura de Gye en el mes de Julio</h3>
                     <p id="humedad" class="mb-0"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- 
           <div class="col-xl-3 col-sm-6 col-12 mb-4">
             <div class="card">
               <div class="card-body">
@@ -233,11 +237,12 @@
               </div>
             </div>
           </div>
+          -->
         </div>
       </section>
 
       <!-- Section: Main chart -->
-      <section class="mb-4 w-100" >
+      <section class="mb-4 w-100" id="temp">
         <div class="card">
           <div class="card-header py-3">
             <h5 id="timezone" class="mb-0 text-center"><strong></strong></h5>
@@ -249,18 +254,34 @@
         </div>
       </section>
       <!-- Section: Main chart -->
-
+      <section>
+        <div class="row">
+          <div class="col-xl-12 col-sm-8 col-18 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex justify-content-around px-md-1">
+                  <div class="align-self-center">
+                  <!--  <i class="fas fa-pencil-alt text-info fa-3x"></i> -->
+                    <img src="https://la.network/wp-content/uploads/2016/09/GUAYAQUIL-ECUADOR.jpg" height="200" width="250">
+                  </div>
+                  <div class="text-end align-self-center">
+                    <h3>Marea en el mes de Juliio</h3>
+                    <p id="humedad" class="mb-0"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
       <!-- Inocar mareas -->
-      <section class="mb-4 w-100">
+      <section class="mb-4 w-100" id="waves">
         <div class="card">
           <div id="table-container">
-
           </div>
-
         </div>
 
       </section>
-      <!--Section: Sales Performance KPIs-->
+      <!--Section: Sales Performance KPIs
       <section class="mb-4">
         <div class="card">
           <div class="card-header text-center py-3">
@@ -351,10 +372,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--Section: Sales Performance KPIs-->
 
-      <!--Section: Minimal statistics cards-->
+      <!--Section: Minimal statistics cards
       <section>
         <div class="row">
           <div class="col-xl-3 col-sm-6 col-12 mb-4">
@@ -504,10 +525,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <!--Section: Minimal statistics cards-->
 
-      <!--Section: Statistics with subtitles-->
+      <!--Section: Statistics with subtitles
       <section>
         <div class="row">
           <div class="col-xl-6 col-md-12 mb-4">
@@ -593,7 +614,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <!--Section: Statistics with subtitles-->
     </div>
   </main>
